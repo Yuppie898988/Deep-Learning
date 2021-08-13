@@ -49,8 +49,8 @@ def test_loop(dataloader, model):
     return accuracy
 
 
-mnist_train = torchvision.datasets.FashionMNIST(root='../data', train=True, transform=ToTensor(), download=True)
-mnist_test = torchvision.datasets.FashionMNIST(root='../data', train=False, transform=ToTensor(), download=True)
+mnist_train = torchvision.datasets.FashionMNIST(root='./data', train=True, transform=ToTensor(), download=True)
+mnist_test = torchvision.datasets.FashionMNIST(root='./data', train=False, transform=ToTensor(), download=True)
 batch_size = 64
 learning_rate = 0.2
 epochs = 50
